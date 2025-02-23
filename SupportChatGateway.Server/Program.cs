@@ -1,3 +1,8 @@
+using SupportChatGateway.Server.Extensions;
+using SupportChatGateway.Server.Interfaces.Services;
+using SupportChatGateway.Server.Interfaces.Services.Contracts;
+using SupportChatGateway.Server.UseCases;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -6,6 +11,10 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+builder.Services.AddDataGrpcClient(builder.Configuration);
+builder.Services.AddTransient<DataGrpcService>();
+builder.Services.AddTransient<AggregatedResponseService>();
 
 var app = builder.Build();
 
