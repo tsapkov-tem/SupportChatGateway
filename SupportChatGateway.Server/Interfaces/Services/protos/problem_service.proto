@@ -1,0 +1,12 @@
+﻿
+syntax = "proto3";
+
+option csharp_namespace = "SupportChatGateway.Server";
+
+package support;
+
+import "Interfaces/Services/protos/chat_entities.proto";
+
+service ProblemGrpcService {
+	rpc GetProblemList(SupportTypeRequest) returns (ProblemListResponse);
+}

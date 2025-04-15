@@ -1,6 +1,6 @@
 ﻿namespace SupportChatGateway.Server.Interfaces.Services.Contracts
 {
-    public interface IDataGrpcService : ILogGrpcService, IProblemGrpcService
+    public interface IDataGrpcService : ILogService, IProblemService
     {
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace SupportChatGateway.Server.Interfaces.Services.Contracts
 {
-    public interface ILogGrpcService
+    public interface ILogService
     {
         public Task<LogsListResponse> GetLogsListAsync(SupportTypeRequest supportTypeRequest);
     }

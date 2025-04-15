@@ -1,4 +1,5 @@
 ﻿using SupportChatGateway.Server.Constants;
+using SupportChatGateway.Server.Interfaces.Services.Contracts;
 
 namespace SupportChatGateway.Server.Extensions
 {
@@ -11,7 +12,11 @@ namespace SupportChatGateway.Server.Extensions
             if (string.IsNullOrEmpty(connection))
                 throw new Exception("Grpc connection url is undefined.");
 
-            services.AddGrpcClient<ChatService.ChatServiceClient>(o =>
+            services.AddGrpcClient<LogGrpcService.LogGrpcServiceClient>(o =>
+            {
+                o.Address = new Uri(connection);
+            });
+            services.AddGrpcClient<ProblemGrpcService.ProblemGrpcServiceClient>(o =>
             {
                 o.Address = new Uri(connection);
             });

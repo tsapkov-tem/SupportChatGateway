@@ -31,7 +31,10 @@
   </ItemGroup>
 
 	<ItemGroup>
-		<Protobuf Include="Interfaces\Services\protos\chat_service.proto" GrpcServices="Client" />
+		<Protobuf Include="Interfaces\Services\protos\chat_entities.proto" GrpcServices="Client" />
+		<Protobuf Include="Interfaces\Services\protos\log_service.proto" GrpcServices="Client" />
+		<Protobuf Include="Interfaces\Services\protos\problem_service.proto" GrpcServices="Client" />
 	</ItemGroup>
+
 
 </Project>

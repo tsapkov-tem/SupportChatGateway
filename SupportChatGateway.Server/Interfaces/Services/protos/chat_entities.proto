@@ -56,8 +56,3 @@ message ProblemListResponse {
 		Error error = 2;
 	}
 }
-
-service ChatService {
-	rpc GetLogsList(SupportTypeRequest) returns (LogsListResponse);
-	rpc GetProblemList(SupportTypeRequest) returns (ProblemListResponse);
-}

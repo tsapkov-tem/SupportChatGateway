@@ -1,6 +1,6 @@
 ﻿namespace SupportChatGateway.Server.Interfaces.Services.Contracts
 {
-    public interface IProblemGrpcService
+    public interface IProblemService
     {
         public Task<ProblemListResponse> GetProblemListAsync(SupportTypeRequest supportTypeRequest);
     }

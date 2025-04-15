@@ -2,18 +2,19 @@
 
 namespace SupportChatGateway.Server.Interfaces.Services
 {
-    public class DataGrpcService(ChatService.ChatServiceClient client) : IDataGrpcService
+    public class DataGrpcService(ProblemService problemService, LogService logService) : IDataGrpcService
     {
-        private readonly ChatService.ChatServiceClient _client = client;
+        private readonly ProblemService _problemService = problemService;
+        private readonly LogService _logService = logService;
 
         public async Task<LogsListResponse> GetLogsListAsync(SupportTypeRequest supportTypeRequest)
         {
-            return await _client.GetLogsListAsync(supportTypeRequest);
+            return await _logService.GetLogsListAsync(supportTypeRequest);
         }
 
         public async Task<ProblemListResponse> GetProblemListAsync(SupportTypeRequest supportTypeRequest)
         {
-            return await _client.GetProblemListAsync(supportTypeRequest);
+            return await _problemService.GetProblemListAsync(supportTypeRequest);
         }
     }
 }
