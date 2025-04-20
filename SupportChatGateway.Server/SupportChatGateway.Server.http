@@ -1,6 +1,6 @@
 @SupportChatGateway.Server_HostAddress = http://localhost:5031
 
-GET {{SupportChatGateway.Server_HostAddress}}/weatherforecast/
+GET {{SupportChatGateway.Server_HostAddress}}/
 Accept: application/json
 
 ###

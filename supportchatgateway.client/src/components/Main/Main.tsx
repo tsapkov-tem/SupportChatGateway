@@ -1,8 +1,9 @@
-import React from 'react';
+import React from "react";
 
-export const Main = () => {
+export const Main: React.FC = () => {
     return (
-        <main className='main'>
+        <main className="main">
+            чаты
         </main>
     );
 }

@@ -1,0 +1,14 @@
+.problems{
+    padding: 10px;
+}
+
+.problems__title{
+    font-size: 1.7em;
+    margin: 10px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.problems__list {
+    border-left: 5px solid rgba(173, 216, 230, 0.2);
+    padding: 0 10px;
+}

@@ -1,0 +1,16 @@
+.supports{
+    padding: 10px;
+}
+
+.supports__title{
+    font-size: 1.7em;
+    margin: 10px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.supports__list {
+    display: flex;
+    list-style-type: none;
+    flex-wrap: wrap;
+    gap: 30px;
+}
