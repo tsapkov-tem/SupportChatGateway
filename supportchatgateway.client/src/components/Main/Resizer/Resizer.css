@@ -1,0 +1,7 @@
+.resizer {
+    width: 5px;
+    background-color: #dddddd;
+    border: 2px solid white;
+    cursor: col-resize;
+    position: relative;
+}

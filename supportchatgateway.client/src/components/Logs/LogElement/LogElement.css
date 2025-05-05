@@ -1,0 +1,81 @@
+.log-element {
+    list-style-type: none;
+    width: 100%;
+    background-color: rgba(173, 216, 230, 0.2);
+    color: rgba(0, 0, 0, 0.7);
+    border: 1px solid #ddd;
+    margin: 16px 0;
+    border-radius: 8px;
+}
+
+.log-element__username {
+    font-size: 1.5em;
+    margin: 8px;
+}
+
+.log-element__code-details {
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
+    visibility: hidden;
+    font-size: 1em;
+    margin: 8px;
+    color: #555;
+}
+
+    .log-element__code-details.active {
+        opacity: 1;
+        visibility: visible;
+    }
+
+.log-element__details {
+    display: flex;
+    font-size: 1em;
+    margin: 8px;
+    color: #555;
+}
+
+.log-element__role {
+    margin-right: 8px;
+    font-weight: bold;
+}
+
+.log-element__code {
+    margin-right: 8px;
+    color: #007bff;
+    background-color: transparent;
+    border: none;
+    line-height: 1;
+    font-size: medium;
+}
+
+    .log-element__code:hover {
+        color: blue;
+    }
+
+.log-element__evaluation {
+    line-height: 1;
+}
+
+.log-element__evaluation.star-0 {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.log-element__evaluation.star-5 {
+    color: green;
+}
+
+.log-element__evaluation.star-4 {
+    color: lightgreen;
+}
+
+.log-element__evaluation.star-3 {
+    color: lightsalmon;
+}
+
+.log-element__evaluation.star-2 {
+    color: lightcoral;
+}
+
+.log-element__evaluation.star-1 {
+    color: red;
+}

@@ -6,7 +6,7 @@ interface SupportElementProps {
     support: Support;
 }
 
-export const SupportElement : React.FC<SupportElementProps> = ({ support }) => {
+export const SupportElement: React.FC<SupportElementProps> = ({ support }) => {
     const [status, setStatus] = useState(support.supportStatus);
 
     return (

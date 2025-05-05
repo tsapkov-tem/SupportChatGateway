@@ -4,7 +4,7 @@ import { SupportElement } from "./SupportElement/SupportElement";
 import "./Supports.css";
 
 
-export const Supports: React.FC = () => {
+const Supports: React.FC = () => {
     const [supports, setSupports] = useState<Support[]>([]);
 
     useEffect(() => {
@@ -28,9 +28,11 @@ export const Supports: React.FC = () => {
             <h2 className="supports__title">Специалисты поддержки</h2>
             <ul className="supports__list">
                 {supports.map((support) => (
-                    <SupportElement support={support}/>
+                    <SupportElement support={support} />
                 ))}
             </ul>
         </main>
     );
 }
+
+export default Supports;

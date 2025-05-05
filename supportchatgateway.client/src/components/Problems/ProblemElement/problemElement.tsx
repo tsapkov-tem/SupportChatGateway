@@ -3,10 +3,10 @@ import { Problem } from "../../../types/Problem";
 import "./ProblemElement.css"
 
 interface ProblemElementProps {
-    problem: Problem; 
-} 
+    problem: Problem;
+}
 
-export const RoblemElement : React.FC<ProblemElementProps> = ({ problem }) => {
+export const RoblemElement: React.FC<ProblemElementProps> = ({ problem }) => {
 
     const renderStars = (stars: number) => {
         return "★".repeat(stars) + "☆".repeat(5 - stars);

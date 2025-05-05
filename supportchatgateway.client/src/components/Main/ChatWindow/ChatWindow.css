@@ -1,0 +1,48 @@
+.chat-window {
+    flex: 1;
+    border: 1px solid rgba(173, 216, 230, 0.5);
+    padding: 10px;
+    border-radius: 4px;
+    background-color: lightblue;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-window__messages {
+    flex: 1;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(243, 251, 253);
+    border-radius: 4px;
+}
+
+.message {
+    border-bottom: 1px solid #eee;
+    width: 85%;
+    margin: 5px;
+    padding: 5px;
+}
+
+.message--sended {
+    background-color: rgb(204, 238, 250);
+    margin-left: auto;
+    border-radius: 10px 10px 0px 10px;
+}
+
+.message--received {
+    background-color: rgb(230, 248, 255);
+    margin-right: auto;
+    border-radius: 10px 10px 10px 0;
+}
+
+.message__text {
+    color: rgba(0, 0, 0, 0.7);
+    margin: 7px;
+}
+
+.message__date {
+    color: rgba(0, 0, 0, 0.4);
+    margin-left: 7px;
+}

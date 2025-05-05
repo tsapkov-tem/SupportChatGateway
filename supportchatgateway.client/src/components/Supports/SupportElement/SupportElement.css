@@ -1,5 +1,5 @@
 .support-element {
-    background-color:  rgba(173, 216, 230, 0.3);
+    background-color: rgba(173, 216, 230, 0.3);
     width: 292px;
     border-radius: 15px;
     border: 5px;
@@ -7,27 +7,27 @@
     padding: 8px;
 }
 
-.support-element__details{
+.support-element__details {
     display: flex;
 }
 
-.support-element__name{
+.support-element__name {
     font-weight: bold;
     margin-right: 8px;
     font-size: larger;
 }
 
-.support-element__lastname{
+.support-element__lastname {
     font-weight: bold;
     margin-right: 8px;
     font-size: larger;
 }
 
-.support-element__type{
+.support-element__type {
     font-size: medium;
 }
 
-.support-element__status{
+.support-element__status {
     display: block;
     border: 1px solid blue;
     width: 14px;
@@ -35,10 +35,10 @@
     border-radius: 10px;
 }
 
-.support-element__status.status-0{
+.support-element__status.status-0 {
     background-color: white;
 }
 
-.support-element__status.status-1{
+.support-element__status.status-1 {
     background-color: greenyellow;
 }

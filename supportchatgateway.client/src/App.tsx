@@ -1,18 +1,21 @@
-import React from "react";
+import React, { Suspense, lazy } from "react";
 import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
 import { Header } from "./components/Header/Header";
-import { Main } from "./components/Main/Main";
-import { Logs } from "./components/Logs/Logs";
-import { Problems } from "./components/Problems/Problems";
-import { Supports } from "./components/Supports/Supports";
 import { Footer } from "./components/Footer/Footer";
 import "./App.css";
+
+const Main = lazy(() => import('./components/Main/Main'));
+const Logs = lazy(() => import("./components/Logs/Logs"));
+const Problems = lazy(() => import("./components/Problems/Problems"));
+const Supports = lazy(() => import("./components/Supports/Supports"));
+
 
 const App: React.FC = () => {
   return (
     <>
       <Router>
         <Header/>
+        <Suspense fallback={<div>Loading...</div>}>
           <Routes>
             <Route path="/" element={<Main/>} />
             <Route path="/chats" element={<Main/>} />
@@ -20,6 +23,7 @@ const App: React.FC = () => {
             <Route path="/logs" element={<Logs/>} />
             <Route path="/supports" element={<Supports/>} />
           </Routes>
+        </Suspense>
         <Footer/>
       </Router>
     </>

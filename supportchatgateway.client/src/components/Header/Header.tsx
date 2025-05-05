@@ -17,7 +17,7 @@ export const Header: React.FC = () => {
                 </ul>
             </nav>
             <button className="header__menu-button" onClick={() => setOpen(!isOpen)}>
-                =
+                ☰
             </button>
         </header>
     );

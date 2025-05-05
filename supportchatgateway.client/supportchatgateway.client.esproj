@@ -11,6 +11,9 @@
   <ItemGroup>
     <Folder Include="public\" />
     <Folder Include="src\assets\" />
-    <Folder Include="src\components\" />
+    <Folder Include="src\components\Main\ChatWindow\ChatForm\" />
+    <Folder Include="src\components\Main\Resizer\" />
+    <Folder Include="src\components\Main\ChatNav\" />
+    <Folder Include="src\components\ErrorBoundaries\" />
   </ItemGroup>
 </Project>
